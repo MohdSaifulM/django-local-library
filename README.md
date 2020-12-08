@@ -1,7 +1,7 @@
 # The Django Local Library
 
 ## Description
-Chris our random `angmoh` has asked us to make another app for his company, this Chris ah, why ah why. So Chris requires a library app to manage his new business. Chris has his library in 3 locations and hopes to expand his library to more locations in the future. He wants his users to be registered before they can borrow books online and would also like to know the books location.
+Chris our random `angmoh` has asked us to make another app for his company, this Chris ah, `why ah why`. So Chris requires a library app to manage his new business. Chris has his library in 3 locations and hopes to expand his library to more locations in the future. He wants his users to be registered before they can borrow books online and would also like to know the books location.
 
 ## Setup
 1. Set up django
