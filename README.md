@@ -28,13 +28,18 @@ ebere$ python manage.py runserver
 
 ## Deliverables
 ### User
-1. User should be able ot register online
-1. User should be able to borrow as a member from any library location
-1. User should be able to return book online
+1. User should be able to register online
+1. User should be able to borrow as a member from any library location seamlessly.
+1. User should be able to return book online seamlessly.
 
-### Admin
-1. User should be able Add and delete books (just set status to false)
-1. User should be able to edit and update book information
+The below code can be used to stop the csrf check on form submission without using serializers.
+```python
+from django.views.decorators.csrf import csrf_exempt
+
+@csrf_exempt
+def borrow_book(request, postid):
+    return JsonResponse({"message": "error"}, status=400)
+```
 
 
 Happy coding! Make our random `angmoh` proud again~
