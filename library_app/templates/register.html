@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+<title>Registration</title>
+{% endblock  %}
+
+{% block body %}
+    <h4 class="font-weight-bold text-center mt-4">Registration</h4>
+        <div class="container">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{form | crispy}}
+                <button type="submit" class="btn btn-outline-secondary btn-block"> Signup </button>
+            </form>
+            <a href="{% url 'login' %}">if you already have an account</a>
+        </div>
+{% endblock  %}
